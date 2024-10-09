@@ -11,8 +11,6 @@ use Illuminate\Support\Facades\Session;
 class RoomAuthController extends Controller
 {
 
-
-
     public function login()
     {
 
@@ -20,8 +18,6 @@ class RoomAuthController extends Controller
 
     }  
       
-
-
     public function register()
     {
 
@@ -29,8 +25,6 @@ class RoomAuthController extends Controller
 
     }
       
-
-    
     public function postLogin(Request $request)
     {
 
@@ -52,7 +46,6 @@ class RoomAuthController extends Controller
 
     }
       
-
     public function postRegister(Request $request)
     {  
 
@@ -71,8 +64,6 @@ class RoomAuthController extends Controller
 
     }
     
-    
-    
     public function create(array $data)
     {
 
@@ -84,8 +75,6 @@ class RoomAuthController extends Controller
 
     }
     
-  
-
     public function logout(Request $request) 
     {
 
@@ -95,5 +84,4 @@ class RoomAuthController extends Controller
 
     }
     
-
 }
