@@ -7,20 +7,20 @@ use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
-    //
+    
     public function expense()
     {
      
         return view("admin.Account.expense");
 
     }
+
     public function expenselist()
     {
         $expenses = Expense::all();
         return view("admin.account.expenselist")->with('expenses',  $expenses);
 
     }
-
 
     public function income()
     {
@@ -31,12 +31,10 @@ class AccountController extends Controller
     public function store(Request $request)
     {
 
-
         $request->validate([
            'expensename',
            'cost',
     
-
         ]);
 
         $expense= new Expense();
@@ -47,7 +45,5 @@ class AccountController extends Controller
         return redirect("admin/Account/expenselist")->with("success", "Total Expense");
 
     }
-
-
 
 }
