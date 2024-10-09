@@ -12,16 +12,13 @@ use Illuminate\Support\Facades\Session;
 class CustomerController extends Controller
 {
 
-
     public function login()
     {
 
         return view("customer.login");
 
     }  
-      
-
-
+    
     public function register()
     {
 
@@ -29,16 +26,12 @@ class CustomerController extends Controller
 
     }
 
-
-
     public function customerlist()
     {
 
         $customers = Customer::all();
         return view("admin.customerlist")->with('customers',  $customers);
     }
-
-
 
     public function Account()
     {
@@ -54,9 +47,6 @@ class CustomerController extends Controller
 
     }
   
-  
-
-
     public function updatepassword(Request $request)
     {
 
@@ -65,12 +55,10 @@ class CustomerController extends Controller
             'password' => 'required|confirmed',
         ]);
 
-
         #Match The Old Password
         if(!Hash::check($request->old_password, auth()->user()->password)){
             return back()->with("error", "Old Password Doesn't match!");
         }
-
 
         #Update the new Password
              User::whereId(auth()->user()->id)->update([
@@ -81,14 +69,12 @@ class CustomerController extends Controller
 
     }
 
-
     public function contact()
     {
 
         return view("customer.contact");
 
     }
-
 
     public function Allrooms()
     {
@@ -112,13 +98,10 @@ class CustomerController extends Controller
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
 
-
         return redirect("/login")->withErrors('Oppes! You have entered invalid credentials');
 
     }
       
-
-
     public function postRegister(Request $request)
     {  
 
@@ -127,17 +110,13 @@ class CustomerController extends Controller
             'email' => 'required|email|unique:customers',
             'password' => 'required|confirmed',
         ]);
-
-           
+ 
         $data = $request->all();
         $check = $this->create($data);
 
-         
         return redirect("/")->withSuccess('Great! You have Successfully loggedin');
 
     }
-    
-    
     
     public function create(array $data)
     {
@@ -150,7 +129,6 @@ class CustomerController extends Controller
 
     }
     
-
     public function logout(Request $request) {
 
             Auth::guard("customers")->logout();
@@ -158,7 +136,6 @@ class CustomerController extends Controller
             return Redirect('/');
 
     }
-
 
  }
 
