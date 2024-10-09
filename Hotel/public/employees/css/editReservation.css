@@ -1,0 +1,66 @@
+  .edit-h2
+  {
+        color:#141414;
+        font-family: 'roboto';
+        font-size: 40px;
+  }
+
+.editreserve-jumbotron
+  {
+    width:1100px;
+    margin-bottom: 2rem;
+    background-color: #eaecf4;
+    border-radius: 0.3rem;
+  }
+.editreserve-row
+  {
+    padding: 1.5rem;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: 170px;
+  }
+.text-center
+  {
+    color: #1e2cc8;
+    font-size: 36px;
+    font-family: 'roboto';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 280px;
+
+  }
+.editreserve-label
+  {
+    font-weight: 600;
+    color: black;
+    font-family: 'roboto';
+  }
+
+  .button-form{
+    width: min-content;
+    margin-left: 958px;
+  }
+
+  .editreserve-label::after
+  {
+      content:" *";
+      color: red;
+  }
+  label[for="discount"]::after {
+      content: "";
+  }
+
+  label[for="specialrequest"]::after {
+      content: "";
+  }
+  label[for="guestnumber"]::after {
+      content: "";
+  }
+  label[for="paid"]::after {
+      content: "";
+  }
+  label[for="due"]::after {
+      content: "";
+  }

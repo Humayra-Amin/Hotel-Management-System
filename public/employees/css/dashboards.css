@@ -1,0 +1,79 @@
+.dash-container
+{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.card 
+{
+    margin: 10px;
+}
+.card-text 
+{   
+    
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+}
+.Overview-body .overview-text
+{
+    font-size: 25px;
+}
+
+.dash-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+        .dash-card-body
+        {
+            height: 150px;
+            padding: 1.25rem;
+            color: #000000;
+        
+        }
+
+
+        .dash-h3
+        {
+            font-size: 28px;
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .dashtitle-h3
+        {
+            font-size: 28px;
+            font-weight: 500;
+            color: #0a0a0a;
+            margin-left: 30px;
+            margin-top: 20px;
+
+        }
+
+        .dash-text-center
+        {
+    
+            color: #000000;
+            font-size: 20px;
+            font-family: 'roboto';
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .dashp-text-center
+        {
+
+        color: #000000;
+        font-size: 20px;
+        font-family: 'roboto';
+        margin-top: 10px;
+        text-align: center;
+
+        }

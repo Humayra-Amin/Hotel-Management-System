@@ -1,0 +1,19 @@
+.book-fonts{
+    font-family:'roboto';
+}
+.book-h2{
+    color: #141414;
+    font-family: roboto;
+    font-size: 40px;
+}
+   
+.book-line-gap{
+    margin-left: 100px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.book-table{
+    text-align: center;
+    margin-top: 30px;
+}

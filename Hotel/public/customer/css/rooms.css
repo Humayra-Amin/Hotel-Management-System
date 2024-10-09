@@ -1,0 +1,81 @@
+.rooms-details {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #e8eef0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .room-slider {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .room-slider img {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .room-details h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  .room-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }
+
+  .roomprice{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end; 
+  }
+  .roomprice .roompricetag{
+    font-weight: bold;
+    font-size: 40px;
+
+  }
+  .roomprice .roomduration{
+  position: relative;
+  left: 30px;
+  }
+
+.roombook{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+.roombook-btn{
+  width: 120px;
+  color: rgb(255, 255, 255);
+  background-color: #c5874e;
+  display: inline-block;
+  font-size: 18px;
+  font-family:'signika';
+  border: 6px solid transparent;
+  border-radius: 8px #c5874e;
+}
+
+.roomicon-image{
+  height: 100%;
+  width: 30px;
+object-fit: cover;
+}
+
+.roomprice{
+  display: flex;
+  justify-content: flex-end; 
+}
+.roomprice .roompricetag{
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+}
+.roomprice .roomduration{
+padding-right: 32px;
+margin-top: 55px;
+
+}

@@ -1,0 +1,138 @@
+
+.contact{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.iconflex{
+    display: flex;
+}
+.contactimage {
+    height:400px;
+   max-width:100%;
+   object-fit: cover;
+   opacity: .7;
+    
+}
+
+.text-contact{
+        font-size: 54px;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+
+}
+.text-caption{
+    position: absolute;
+    top:25%;
+    padding: 20px;
+}
+
+.maptop{
+    padding-bottom: 83px;
+}
+.map-container {
+    height: 300px; 
+}
+.contact-detail{
+    padding-top: 60px;
+    left: 10px;
+}
+.contact-title{
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family:'Playfair Display', serif;
+    font-weight: bold;
+}
+.contact-heading{
+    font-family: "Cinzel Decorative";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2.14;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #b0914f;
+    margin: 0px;
+}
+.contact-title:after {
+    content: '';
+    width: 80px;
+    position: absolute;
+    left: 30px;
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+ }
+.contact-icon{
+    font-size: 30px;
+    color: #c5874e;
+}
+.icon-title{
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: serif;
+    font-weight:inherit;
+    color: black;
+}
+
+
+
+   .title-writeus{
+    padding-bottom: 80px;
+    font-size: 45px;
+    font-family:'Playfair Display', serif;
+    font-weight: bold;
+    color: rgb(15, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+   }
+   .title-writeus:after {
+    padding-bottom: 50px;
+    content: '';
+    width: 80px;
+    position: absolute;
+    left: 600px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+ }
+  .form-control {
+    border-radius: 0px;
+    margin-bottom: 30px;
+}
+ .form-control {
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #c5874e;
+    border-radius: 4px;
+}
+.form-message{
+    width: 100%;
+}
+
+.send-btn {
+    
+    color: #c5874e;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+   
+}
+.send-btn:hover{
+    color: black;
+}
+.send-btn-primary{
+    display: flex;
+    justify-content: center;
+}

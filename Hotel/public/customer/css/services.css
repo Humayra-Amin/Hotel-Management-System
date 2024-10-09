@@ -1,0 +1,88 @@
+
+ .service-slider-img {  
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+
+}
+.modal-content{
+     size: 100%;
+}
+    .service-section{
+    background:  #aabbce;
+  }
+  
+  .serviceheading {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    font-family:'Playfair Display', serif;
+  }
+  .serviceheading:after {
+    content: '';
+    width: 100px;
+    position: absolute;
+    left: 46%;
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+  }
+  .services-description{
+    font-family: 'poppins';
+    font-style:inherit;
+    padding: 10px 0;
+  }
+  .service-title{
+    font-size: 30px;
+    font-family:'Playfair Display', serif;
+  }
+  
+  .service-image-container {
+    margin-top: 0px;
+  }
+  .service-image-container .service-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 60px;
+  }
+.service-imgfile{
+  width: 90%;
+  height: 50%;
+  object-fit: cover;
+}
+ .service-imgfile1{
+  width: 90%;
+  height: 40%;
+  object-fit: cover;
+ }
+
+
+ .service-view-btn{
+  width: 120px;
+  position: relative;
+  bottom: 48px;
+  left: 66%;
+  color: white;
+  background-color: #4d4b4a;
+  display: inline-block;
+  font-size: 16px;
+  font-family:'signika';
+  border: 2px solid transparent;
+  border-radius: 4px;
+ }
+ .service-view-btn:hover{
+  color: white;
+  background-color: #c5874e;
+  border: 2px solid transparent;
+  border-radius: 4px;
+ }
+
+.closemark{
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 20px;
+
+}

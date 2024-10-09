@@ -1,0 +1,75 @@
+.file-card .custom-card-header 
+    {
+        font-weight: 700;
+    }
+
+.custom-card-header 
+    {
+        padding: 1rem 1.35rem;
+        background-color: #aebfd8;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);;
+    }
+
+
+.personalform-control, .dataTable-input 
+    {
+        display: block;
+        width: 100%;
+        padding: 0.875rem 1.125rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #69707a;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #c5ccd6;
+        appearance: none;
+        border-radius: 0.35rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+.files-img
+    {
+        height:195px;
+        position:relative;
+        max-width: 320px;
+        margin: auto;
+    }
+
+.file-card 
+    {
+        padding: 0px;
+        background: rgb(222, 224, 237);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 10px;
+        height: 91%;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+
+        margin-left: 650px;
+        margin-top:-500px;
+        width: 60%;
+    }
+
+    .body-change
+    {
+        background-color: #ffffff;
+        border:  1px solid rgba(255, 255, 255, 0.125);
+    }
+
+.custom-card-body
+    {
+        padding: 25px;
+    }
+      
+
+.account-row
+    {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-right: 1.5rem;
+    
+    }

@@ -1,0 +1,56 @@
+.custom-file{
+  margin-bottom: 700px;
+  margin-top: 0;
+  
+}
+.logfile{
+  background-color:#fff;
+}
+.custom-card-group{
+  background: rgb(145, 156, 241);
+  border-radius: 30px;
+  margin-top: 25px;
+}
+
+.fileimg{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+} 
+
+.login-btn1{
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 50%;
+  background-color: blue;
+  color: white;
+  border-radius: 60px;
+  font-weight: 600;
+}
+
+.login-btn1:hover{
+  background: white;
+  border: 1px solid;
+  color: black;
+  transition: 0.5s;
+}
+
+.file-inp{
+  height: 50px;
+  width: 450px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin-bottom: 20px;
+  background: transparent;
+  color: #40414a;
+}
+
+
+.linkbtn{
+  color: aliceblue;
+}
+.linkbtn:hover{
+  color: rgb(61, 61, 175);
+}
+

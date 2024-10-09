@@ -1,0 +1,52 @@
+.checkout-card-body{
+  padding: 1.25rem;
+  color: #000;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.checkout-card {
+    margin-top: 200px;
+    margin-left: 350px;
+    margin-right: 350px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eaecf4;
+}
+
+.checkout-h2{
+    margin-left: 90px;
+    color: blue;
+    font-size: 35px;
+  }
+
+  .checkout-label{
+  font-weight: 500;
+  color: black;
+  font-family: 'roboto';
+  margin-right: 280px;
+  }
+
+  .btn-primary-file {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0;
+    font-family: 'roboto';
+    font-weight: 500;
+    color: #2d2c2c;
+}
+
+.btn-primary-file:hover {
+    background-color: #547eaa;
+    color: #2d2c2c;
+}
+
+.input-group-prepend {
+    background-color: #f8f9fa;
+}
+
+.input-group-text{
+  background-color: #bcc6f0;
+}

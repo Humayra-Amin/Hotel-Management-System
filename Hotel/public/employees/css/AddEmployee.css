@@ -1,0 +1,95 @@
+
+      .custom-h2
+              {
+                    color:#141414;
+                    font-family: 'roboto';
+                    font-size: 40px;
+                    margin-right: 170px;
+                  }
+      /* .custom-box8
+              {
+                box-shadow: 0px 0px 5px 1px #ddd;
+              } */
+      .files-jumbotron
+              {
+                width:1100px;
+                margin-bottom: 2rem;
+                background-color: #eaecf4;
+                border-radius: 0.3rem;
+              }
+      .add-row
+              {
+                padding: 1.5rem;
+                padding-top: 0;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 40px;
+                margin-right: 170px;
+              }
+     .text-font
+              {
+                color: #1e2cc8;
+                font-size: 36px;
+                font-family: 'roboto';
+                margin-top: 20px;
+                margin-bottom: 20px;
+              }
+     .custom-label
+              {
+                font-weight: 600;
+                color: black;
+                font-family: roboto;
+              }
+
+      .custom-input-file
+              {
+                padding: 10px;
+                width: 50%;
+                margin: 0 auto;
+                
+              }
+      .custom-upload-img {
+                  border-radius: 100%;
+                  display: inline-block;
+                  width: 130px;
+                  height: 130px;
+                  object-fit: contain;
+                  object-position: 80% 80%;
+                  border: 3px solid #1e2cc8;
+                  margin-right: 15px;
+                  vertical-align: right;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+              }
+      .custom-input-file-upload 
+              {
+                  position: relative;
+                  display: inline-block;
+                  vertical-align: middle;
+              }
+      .custom-input-file-upload input[type="file"] {
+                opacity: 0;
+                padding: 10px 0;
+                height:30px;
+                
+              }
+              
+      .custom-upload-label {
+                width: 150px;
+                height: 36px;
+                background: #3b70f1;
+                text-align: center;
+                color: #ffffff;
+                display: block;
+                padding: 8px 0;
+                position: absolute;
+                line-height: normal;
+                font-size: 14px;
+                font-weight: 700;
+                transition: all 0.3s ease-in-out;
+              }
+      .custom-input-file-upload:hover .upload-label {
+                  background: #eaf5fe;
+                color: #3b70f1;
+                height: 10px;
+              }

@@ -1,0 +1,122 @@
+.single-view 
+{        
+    font-family: 'roboto';
+    color:#1e2cc8;
+    font-size: 40px; 
+ }
+.singleview 
+{
+    font-family: 'roboto';
+    color:black;
+    font-size: 19px;
+    font-weight: bold; 
+    margin-top: 25px;
+}
+
+.single-p
+{
+    font-family: 'roboto';
+    color:black;
+    font-size: 17px; 
+    margin-top: 20px;
+}
+
+.bookinfo
+{
+    margin-left: 50px;
+}
+
+.single-h2
+{
+    margin-left: 30px;
+    color: #141414;
+    font-family: 'roboto';
+    font-size: 40px;
+}
+
+.book-container 
+{  
+    margin: 50px;
+    padding-top: 8px;
+    background-color: #eaecf4;
+}
+
+.book-card-text
+{   
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font: bold;
+    color: black;
+}
+
+.book-row
+{
+    padding: 1.5rem;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 90px;
+}
+
+.singleview-button
+{
+    display: inline-block;
+    padding: 0.375rem  0.75rem;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+}
+
+
+.duefiles{
+
+    padding: 20px;
+    background-color: rgb(231, 232, 238);
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-left: 300px;
+    
+  } 
+
+  .formdue {
+    display:flex;
+    align-items: center;
+    background-color: rgb(231, 232, 238);
+    padding: 10px;
+
+  }
+
+  .groupdue {
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .due-file-control{
+  width: 350px;
+  text-align: center;
+  line-height: 2.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+
+.text-center-due {
+    color: #1e2cc8;
+    font-size: 36px;
+    font-family: 'roboto';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+ 
+
+
+
+
+

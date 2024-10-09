@@ -1,0 +1,30 @@
+.group{
+    width: 500px;
+    height: 600px;
+    line-height: 15px;
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: rgb(236, 237, 240);
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  .button-file{
+    width: min-content;
+    margin-left: 180px;
+  }
+  .form-control{
+    width: 300px;
+  }
+  .form-group{
+    margin-left: 80px;
+  }
+  .text-title{
+    font-family: sans-serif;
+  }
+  .text{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom:50px ;
+  }

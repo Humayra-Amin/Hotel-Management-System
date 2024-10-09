@@ -1,0 +1,78 @@
+        .group-h2 
+            {    font-family: "roboto";
+                 font-weight:bold ;
+                 font-size: 18px;
+                 color:black;
+                 margin-left: 140px;
+                
+             }
+        .para
+            {
+                font-family: "roboto";                
+                color:black;
+                font-size: 17px;
+                margin-left: 140px;
+ 
+            }
+        .label
+            {
+                font-family: "roboto";
+                font-weight:bold ;
+                color:black;
+                font-size: 15px;
+            }
+        .second-r
+            {
+                margin-left: 65px;
+            }
+            
+        .firt-r
+            {
+                margin-left: 50px;
+            }
+        .singleE-h2
+            {
+                padding-bottom: 30px;
+                margin-left: 40px;
+                font-weight: bold;
+            }
+        .group-container 
+
+           {  
+                margin: 50px;
+                padding-top: 8px;
+                background-color: #eaecf4;
+               
+            }
+        .image
+            { 
+                border-radius: 70%;
+                margin-top: 90px;
+                margin-left: 75px;
+                width: 180px;
+                height: 200px;
+                
+            }
+        .group-card-title 
+            {  
+                font-size: 34px;
+                font-weight: bold;
+                margin-top: 14px;
+                margin-left: 55px;
+                color: black;
+            }
+        .group-card-text 
+            {   
+                
+                font-family: 'Work Sans', sans-serif;
+                margin-bottom: 10px;
+                font-size: 20px;
+                font: bold;
+                color: black;
+            }
+            
+            
+            
+            
+            
+            

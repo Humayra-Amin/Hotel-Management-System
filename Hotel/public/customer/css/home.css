@@ -1,0 +1,495 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Signika';
+}
+.home-page{
+    height: 100%;
+ 
+    
+}
+
+
+/* navbar */
+.navbar-light.sticky-header{
+    background-color:#a6c7ea;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: rgb(15, 0, 0);
+  font-size: 19px;
+  padding-right: 15px;
+  font-family: sans-serif;
+  
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#ffffff;
+}
+
+.navbar-light.sticky-header  .navbar-nav .nav-link {
+    color: rgb(252, 243, 243);
+}
+.navbar-light .navbar-brand{
+  color: #ffffff;
+  font-size: 34px;
+  padding-right: 20px;
+  font-family: sans-serif;
+}
+.navbar-light.sticky-header.navbar-light .navbar-brand{
+    color: #f2f4f8;
+}
+
+.nav-link-groups{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50%;
+    color: white;
+    /* border-radius: 60px; */
+    font-weight: 600;
+}
+
+.custom-logo img {
+    width: 170px;
+    height: auto;
+    margin-top: -10px;
+    margin-left: 500px;
+    cursor: pointer;
+  }
+
+/* sliderimage */
+.carousel-caption{
+        padding-bottom:210px;
+        color:#ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        font-family:"Playfair Display", serif;
+ }
+
+.slider-title{
+    padding-bottom:2px;
+    color: rgb(242, 136, 7);
+    font-size: 85px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+.slider-img {  
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+
+}
+
+
+.room-section-heading {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    color: #3e74ad;
+}
+
+.room-section-heading:after {
+   content: '';
+   width: 90px;
+   position: absolute;
+   left: 45%;
+   margin-bottom: 10px;
+   display: block;
+   border-bottom: 2px solid #c5874e;
+}
+  
+/* .room-card {
+    margin-bottom: 20px;
+} */
+
+.section-site{
+    padding: 60px;
+    background: whitesmoke;
+}
+
+.hotel-room .hotel-room-body{
+    padding: 30px;    
+    
+}
+       
+.hotel-room{
+    text-align: center;
+    background:#ffffff;
+    cursor: pointer;
+    transition: transform 0.7s ease-in-out;
+}
+
+.hotel-room:hover {         
+    transform: scale(1.1);
+}
+
+
+
+/* about us */
+
+/* .about-us {
+    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
+    padding-bottom: 80px;
+    font-family: 'Poppins';
+}
+
+.about-us img {
+    padding-top:30px;
+    padding-bottom: 100px;
+    width: 80%;
+}
+
+.about-us h2 {
+    padding-bottom: 5px;
+    padding-left: 0px;
+    font-size: 34px;
+    font-weight: bold;
+    font-family:"Playfair Display", serif;
+    color: rgb(15, 0, 0);
+}
+
+
+.about-us h2:after{
+    content: '';
+    width: 80px;        
+    position: absolute;
+    left: 20px;
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+}
+
+.about-us p {
+    font-size: 18px;
+    color:linear-gradient(90deg, rgb(156, 165, 175) 5%, rgba(245,245,255,1) 100%);
+} */
+
+
+/* about */
+
+#about .container {
+    max-width: 930px;
+    background: whitesmoke;
+  }
+  
+  #about p {
+    font-size: 1.2em;
+  }
+  .btn{
+    margin-bottom: 50px;
+  }
+
+
+/* Services */
+/* .services-title{
+    padding-bottom: 75px;
+    padding-left: 0px;
+    font-size: 34px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: rgb(15, 0, 0);
+}
+.services-title:after{
+    content: '';
+    width: 250px;        
+    position: absolute;
+    left: 40%;
+    margin-bottom: 5px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+} */
+
+
+/* .home-services{
+    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
+} */
+/* .services-card {
+    width: 300px;
+    padding: 0px 0px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+.services-card-title {
+    margin-top: 5px;
+    font-family:serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.services-view{
+    text-decoration: none;
+    color: #c5874e;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.services-view:hover{
+    color: #c5874e;
+    text-decoration: none;
+}
+.services-image{
+    cursor: pointer;
+    transition: transform 0.7s ease-out;
+}
+.services-image:hover {         
+    transform: scale(.9);
+} */
+
+          /* footer */
+       
+.row-custom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+} 
+
+.footer{
+    background-color: #a6c7ea;
+    padding: 20px 10px;
+    /* margin-top: 350px;
+    margin-bottom: 0; */
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 800;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: all 0.3s ease;
+ 
+}
+
+.footer-col ul li a:hover{
+    color: rgb(0, 0, 0);
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 1.5em;
+    background-color: rgb(53, 178, 195);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #272222;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+.footer-alt {
+padding-top: 40px;
+color: rgb(0, 0, 0);
+font-family: "poppins";
+font-size: 17px;
+margin: 0px 5px;
+margin-top: 1px;
+}
+
+                              /* reservation */
+/* .reservation form{
+    padding: 2rem;
+    border-radius: 1.5rem;
+} */
+
+
+
+/* .add-text-center
+{
+      color: #1e2cc8;
+      font-size: 36px;
+      font-family: 'roboto';
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 280px;
+      text-align: center;
+
+}
+.reserve-box
+{
+      font-weight: 600;
+      color: black;
+      font-family: 'roboto';
+}
+
+.reserve-box::after
+{
+    content:" *";
+    color: red;
+}
+label[for="discount"]::after {
+    content: "";
+}
+
+label[for="specialrequest"]::after {
+    content: "";
+}
+label[for="guestnumber"]::after {
+    content: "";
+}
+label[for="paid"]::after {
+    content: "";
+}
+label[for="due"]::after {
+    content: "";
+}
+.button-file{
+      width: min-content;
+      margin-left: 958px;
+} */
+
+.reserve-h1 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 620px;
+    font-size: 34px;
+    font-weight: bold;
+    font-family:"Playfair Display", serif;
+    color: #3e74ad;
+}
+
+
+.reserve-h1:after{
+    content: '';
+    width: 80px;        
+    position: absolute;
+    left: 650px;
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+}
+
+/* reservation */
+/* .reservation-clr
+{
+    background: whitesmoke;
+}
+.reservation-form{
+    padding: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+    
+ 
+}
+
+.reservation-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+  
+}
+
+.reservation-form .reservation-container .reservation-box{
+    flex: 1 1 20rem;
+}
+
+.reservation-form .reservation-container .reservation-box p{
+    font-size: 18px;
+    color: #0077b6;
+}
+
+.reservation-form .reservation-container .reservation-box .input{
+    font-size: 20px;
+   
+    padding: 10px;
+    margin: 5px;
+    border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.button-files{
+    width: min-content;
+    margin-left: 650px;
+} */
+
+/* end */
+
+
+
+
+.home-image{
+    width: 100%;
+    object-fit: cover;
+    height: 203px;
+}
+
+
+.mapsize{
+ 
+}
+.home-map{
+    background:whitesmoke;
+}
+
+.homemap-title{
+    font-size: 34px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #3e74ad;
+   padding-bottom: 30px;
+   padding-top: 60px;
+
+}
+
+.homemap-title:after{
+    content: '';
+    width: 80px;        
+    position: absolute;
+    left: 47%;
+    margin-bottom: 5px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+}
+.hopemap-details{
+font-size: 18px;
+padding-bottom: 30px;
+}
+
+
+
+

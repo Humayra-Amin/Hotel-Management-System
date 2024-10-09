@@ -1,0 +1,37 @@
+.bodycustom{
+
+    padding: 30px;
+    background-color: rgb(231, 232, 238);
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    margin: 200px;
+    margin-top:200px;
+    margin-right:200px;
+  } 
+
+  .customfiles {
+    display:flex;
+    align-items: center;
+    background-color: rgb(231, 232, 238);
+    padding: 10px;
+
+  }
+
+  .customform {
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .file-group{
+  width: 350px;
+  /* padding: .450rem .120rem; */
+  text-align: center;
+  line-height: 2.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+ 
