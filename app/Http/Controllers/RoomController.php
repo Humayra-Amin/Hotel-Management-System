@@ -11,10 +11,8 @@ use Illuminate\Support\Facades\Storage;
 class RoomController extends Controller
 {
 
-
     public function index()
     {
-
         
         // $categories = Room::select("category_id")->groupBy("category_id")->get();
         // $categories = Room::get();
@@ -25,7 +23,6 @@ class RoomController extends Controller
 
     }
 
-
     // public function roomcategory(Request $request)
     // {
 
@@ -33,7 +30,6 @@ class RoomController extends Controller
     //     return view("admin.room.index")->with('rooms',  $rooms);
 
     // }
-
 
     public function add()
     {   
@@ -43,7 +39,6 @@ class RoomController extends Controller
 
     }
 
-
     public function single()
     {
 
@@ -51,10 +46,8 @@ class RoomController extends Controller
 
     }
 
-
     public function store(Request $request)
     {
-
 
         $request->validate([
             'roomtitle' => 'required|max:50',
@@ -65,11 +58,8 @@ class RoomController extends Controller
             'category_id' => 'required',
             'roomsize' => 'required',
             'facilities' => 'required',
-    
 
         ]);
-
-
 
         $room = new Room();
         $room->roomtitle = $request->roomtitle;
@@ -85,7 +75,6 @@ class RoomController extends Controller
         $room->status = $request->status;
         $room->save();
 
-
         if($request->file('image')){
             foreach($request->file('image') as $img){
                 Storage::disk("public")->put("$room->id", $img);
@@ -93,15 +82,12 @@ class RoomController extends Controller
 
             }
         }
-
         
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
         return redirect("admin/room")->with("success", "Room created.");
 
     }
-
-
 
     public function update(Request $request,$id)
     {   
@@ -117,8 +103,6 @@ class RoomController extends Controller
 
          
         ]);
-
-
 
         $room = Room::find($id);
         $room->roomtitle = $request->roomtitle;
@@ -165,7 +149,6 @@ class RoomController extends Controller
 
     }
 
-
     public function delete(Request $request)
     { 
 
@@ -173,7 +156,6 @@ class RoomController extends Controller
        return redirect()->back()->with('success','Record Successfully Deleted');
 
     }
-
     
     // discount 
     public function showDiscountValue()
@@ -195,6 +177,5 @@ class RoomController extends Controller
             return redirect()->back()->with('msg', "Something Error! Try again latter.")->with('status', 'danger');
 
     }
-
 
 }
