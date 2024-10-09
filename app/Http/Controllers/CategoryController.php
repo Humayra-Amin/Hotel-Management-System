@@ -9,9 +9,7 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    
-
-
+   
     public function show($id)
     {
 
@@ -19,8 +17,6 @@ class CategoryController extends Controller
         return view("admin.category.viewcategory")->with('categories',  $categories);       
 
     }
-
-
 
     public function index()
     {
@@ -30,15 +26,11 @@ class CategoryController extends Controller
     
     }
 
-
-
     public function create()
     {
         return view("admin.category.addcategory");
 
     }
-
-
 
     public function update(Request $request,$id)
     {   
@@ -52,13 +44,10 @@ class CategoryController extends Controller
         $category->categoryname = $request->categoryname;
         $category->update();
         
-
         return redirect("admin/category")->with("success", "Category updated.");
 
     }
 
-
-    
     public function edit($id)
     {
 
@@ -66,8 +55,6 @@ class CategoryController extends Controller
         return view("admin.category.editcategory")->with('category',  $category);
 
     }
-
-
 
     public function store(Request $request)
     {
@@ -87,8 +74,6 @@ class CategoryController extends Controller
 
     }
 
-
-
     public function delete(Request $request)
     {
 
@@ -96,6 +81,5 @@ class CategoryController extends Controller
         return redirect()->back()->with('success','Record Successfully Deleted');
 
     }
-
 
 } 
