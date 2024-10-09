@@ -10,8 +10,6 @@ use Carbon\Carbon;
 
 class BookingController extends Controller
 {
-    //
-
 
     public function reservation(Request $request)
     {
@@ -20,11 +18,8 @@ class BookingController extends Controller
        
     }
 
-
-
     public function store(Request $request)
     {
-
 
     $request->validate([
             'cname' => 'required|max:50',
@@ -41,14 +36,11 @@ class BookingController extends Controller
             'due' => 'nullable|numeric',
     ]);
 
-
-
     $room = Room::where("id", $request->room_id)->first();
     if(!$room){
         return redirect("admin/booking/booklists")->with("error", "Room not found.");
     }
 
-  
     $booking = new Booking();
     $booking->cname = $request->cname;
     $booking->email = $request->email;
@@ -63,13 +55,11 @@ class BookingController extends Controller
     $booking->discount = $request->discount;
     $booking->paid = $request->paid;
     
-
     $checkInDate = Carbon::parse($request->checkInDate);
 
     $checkOutDate = Carbon::parse($request->checkOutDate);
     
     $numberOfDays = $checkInDate->diffInDays($checkOutDate);
-    
     
     $price = (float)$numberOfDays * (float)$room->price;
     
@@ -77,27 +67,20 @@ class BookingController extends Controller
     $booking->due =  (float)$booking->price - (float)$booking->paid;
     $booking->status = 'checkin';
 
-    
     $booking->save();
-
 
     $income= new Income();
     $income->reservation_id = $booking->id;
     $income->paid = $request->paid;
     $income->save();
 
-
     $room = Room::where('id', $request->room_id)->first();
     $room->status = 'Booked';
     $room->update();
 
-
     return redirect("admin/booking/booklists")->with("success", "Booking Done....");
 
     }
-
-
-
 
     public function editReservation($id)
     {
@@ -105,12 +88,9 @@ class BookingController extends Controller
         return view("admin.booking.editReservation")->with('booking',  $booking);
     }
 
-
-
     public function update(Request $request,$id)
     {
-        
-
+      
         $request->validate([
             'cname' => 'required|max:50',
             'email' => 'required|email',
@@ -125,15 +105,11 @@ class BookingController extends Controller
             'paid' => 'nullable|numeric',
     ]);
 
-
-
     $booking = Booking::find($id);
 
     if (!$booking) {
         return redirect("admin/booking/booklists")->with("error", "Booking not found.");
     }
-
-
 
         $booking = Booking::find ($id);
         $booking->cname = $request->cname;
@@ -145,8 +121,6 @@ class BookingController extends Controller
         $booking->checkInDate = Carbon::parse($request->checkInDate);
         $booking->checkOutDate = Carbon::parse($request->checkOutDate);
         $booking->specialrequest = $request->specialrequest;
-
-
 
         $checkInDate = Carbon::parse($request->checkInDate);
         $checkOutDate = Carbon::parse($request->checkOutDate);
@@ -160,16 +134,11 @@ class BookingController extends Controller
         $booking->paid = $request->paid;
         $booking->due = (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
         
-
         $booking->update();
 
-    
         return redirect("admin/booking/booklists")->with("success", "Booking Updated.....");
     
     }
-
-
-
 
     public function singleview()
     {
@@ -177,7 +146,6 @@ class BookingController extends Controller
         return view("admin.booking.singleview");
 
     }
-
 
     public function show($id)
     { 
@@ -187,9 +155,6 @@ class BookingController extends Controller
 
     }
 
-
-
-
     public function booklists()
     {
 
@@ -197,15 +162,12 @@ class BookingController extends Controller
         return view("admin.booking.booklists")->with('bookings',  $bookings);
     }
 
-
     public function checkout()
     {
 
         return view("admin.booking.checkout");
 
     }
-
-
 
     public function search(Request $request)
    {
@@ -237,21 +199,15 @@ class BookingController extends Controller
         }
 
     
-        return view('admin.booking.singleview')->with('booking',  $booking);
-        
+        return view('admin.booking.singleview')->with('booking',  $booking); 
 
    } 
-
-
 
     public function checkedout(Request $request,$id)
     {
 
-
         $booking = Booking::with("room")->find($id);
 
-
-        
         if($booking){
 
             if($booking->room->status != "Booked"){
@@ -262,7 +218,6 @@ class BookingController extends Controller
             return redirect()->back()->with('error', 'Booking not found.');
         }
 
-        
         if($booking->due >0){
             $income= new Income();
             $income->reservation_id = $booking->id;
@@ -270,9 +225,6 @@ class BookingController extends Controller
             $income->save();
         }
         
-
-
-
         $room = $booking->room;
         $room->status = null;
         $room->save();
@@ -280,13 +232,11 @@ class BookingController extends Controller
         $booking->status = 'checkOut';
         $booking->update();
 
-
         if(Carbon::parse($booking->checkOutDate)->startOfDay() != Carbon::parse(now())->startOfDay()){
             $booking->checkOutDate = now();
             $booking->status = 'checkOut';
             $booking->update();
         }
-
     
         if ($booking->due > 0) 
         {
@@ -297,7 +247,6 @@ class BookingController extends Controller
             $booking->status = 'checkOut';
             $booking->update();
 
-    
             return redirect()->back()->with('success', 'Checked Out successfully!!!! Due amount is now 0...');
         } 
         
@@ -308,8 +257,6 @@ class BookingController extends Controller
         }
     }
 
-
     // Discount Module
-
 
 }
