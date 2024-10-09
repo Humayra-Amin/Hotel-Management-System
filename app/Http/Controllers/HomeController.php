@@ -13,8 +13,6 @@ use Carbon\Carbon;
 
 class HomeController extends Controller
 {
-    //
-
 
     public function home()
     {   
@@ -25,8 +23,6 @@ class HomeController extends Controller
 
     }
 
-
-
     public function singleroom($id, $cat_id)
     { 
      
@@ -35,18 +31,12 @@ class HomeController extends Controller
 
        return view("customer.singleroom", compact('room', 'cat_id'));
 
-    
-
     }
-
-    
 
     public function aboutus()
     {
        return view("customer.aboutus");
     }
-
-
 
     public function roombook(Request $request, $id)
     { 
@@ -61,12 +51,9 @@ class HomeController extends Controller
         $room->availablerooms = $room->availablerooms - 1;
         $room->update();
         
-        
         return redirect("singleroom/$room->id")->with("success", "Room booked.");
 
     }
-
-
 
     public function bookinglist()
     { 
@@ -75,8 +62,6 @@ class HomeController extends Controller
         return view("customer.bookinglist")->with('booklist',  $booklist);
     
     }
-
-
 
     public function store(Request $request)
     {
@@ -109,9 +94,6 @@ class HomeController extends Controller
 
     }
 
-
-
-
     public function BookNow(Request $request){
                     
       
@@ -125,13 +107,10 @@ class HomeController extends Controller
                 'checkOutDate' => 'required|date', 
             ]);
 
-
-
         $room = Room::where("id", $request->room_id)->first();
         if(!$room){
             return redirect()->back();
         }
-
 
         $booking = new Booking();
         $booking->cname = $request->cname;
@@ -160,12 +139,10 @@ class HomeController extends Controller
         
         $booking->save();
 
-
         $income= new Income();
         $income->reservation_id = $booking->id;
         $income->paid = $request->paid;
         $income->save();
-
 
         $room = Room::where('id', $request->room_id)->first();
         $room->status = 'Booked';
@@ -176,7 +153,6 @@ class HomeController extends Controller
         else
             return redirect()->back()->with('msg', "Something Error! Try again latter.")->with('status', 'danger');
     }  
-
 
     public function checkAvailability(Request $request)
     {
@@ -198,8 +174,6 @@ class HomeController extends Controller
             return response()->json(true, 200);
         }
     }
-
-    
     
 }
 
