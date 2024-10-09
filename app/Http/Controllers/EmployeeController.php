@@ -11,8 +11,6 @@ use Illuminate\Support\Facades\Storage;
 class EmployeeController extends Controller
 {
   
-
-
     public function index()
     {
 
@@ -21,8 +19,6 @@ class EmployeeController extends Controller
 
     }
 
-
-
     public function add()
     {
 
@@ -30,20 +26,15 @@ class EmployeeController extends Controller
 
     }
 
-
-
     public function single()
     {
 
         return view("admin.employee.single");
 
     }
-    
-
-
+  
     public function store(Request $request)
     {
-
 
         $request->validate([
 
@@ -80,20 +71,13 @@ class EmployeeController extends Controller
         $employee->salary = $request->salary;
         $employee->save();
 
-
-    
         Storage::disk("public")->put("emp/$employee->id", $request->file('image'));
         $employee->image= Storage::disk("public")->files("emp/$employee->id");
         $employee->update();
 
-
-
         return redirect("admin/employee")->with("success", "Employee created.");
 
     }
-
-
-
 
     public function update(Request $request,$id)
     {
@@ -114,10 +98,7 @@ class EmployeeController extends Controller
             'joiningdate' => 'required',
             'salary' => 'required|integer',
 
-
         ]);
-
-
 
         $employee = Employee::find ($id);
         $employee->ename = $request->ename; 
@@ -135,8 +116,6 @@ class EmployeeController extends Controller
         $employee->salary = $request->salary;
         $employee->update();
 
-
-
         if($request->file('image'))
         {
             Storage::disk("public")->deleteDirectory("emp/$employee->id");
@@ -145,13 +124,9 @@ class EmployeeController extends Controller
         $employee->image= Storage::disk("public")->files("emp/$employee->id");
         $employee->update();
 
-
-
         return redirect("admin/employee")->with("success", "Employee updated.");
     }
 
-
-    
     public function show($id)
     { 
 
@@ -159,8 +134,6 @@ class EmployeeController extends Controller
         return view("admin.employee.single")->with('employee',  $employee);
 
     }
-
-
 
     public function edit($id)
     {
@@ -170,9 +143,6 @@ class EmployeeController extends Controller
 
     }
 
-
-
-
     public function delete(Request $request)
     { 
 
@@ -181,5 +151,4 @@ class EmployeeController extends Controller
 
     }
     
-
 }
