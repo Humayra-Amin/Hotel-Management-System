@@ -7,11 +7,10 @@
 	      <div class="row-custom">
 
 
-				<div class="footer-col mt-5">
-
+          
+          <div class="footer-col mt-5">
 
                   <h4>About Us</h4>
-
 
                     <p>
                       Hotel Paradise is a charming getaway where comfort meets tranquility. 
@@ -20,9 +19,6 @@
                     </p>
                 </div>
 		  
-
-
-
 		  		<div class="footer-col mt-5">
 
 
@@ -87,7 +83,7 @@
     <div class="text-center mb-2">
 
 
-      <p class="footer-alt mb-0 f-14">&copy; Copyright @ 2024</p>
+      <p class="footer-alt mb-0 f-14">Copyright © {{ date('Y') }} - All right reserved</p>
 
 
    </div>
